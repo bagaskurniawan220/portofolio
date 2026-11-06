@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio pribadi Rizky Pratama, calon web developer">
+    <title>Bagas Kurniawan | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="logo">Bagas<span>.</span></a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">Dark</button>
+                <button class="hamburger" id="hamburger">Menu</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- hero -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-greeting">Halo, saya</p>
+                <h1>Bagas Kurniawan</h1>
+                <h2>Web Developer Pemula</h2>
+                <p class="hero-description">
+                    Siswa yang lagi serius belajar bikin website. Saya suka
+                    ngulik tampilan dan fitur, dan sekarang lagi fokus
+                    memperdalam HTML, CSS, dan JavaScript.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="documents/cv.pdf" class="btn btn-outline" download>Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/profile.jpg" alt="Foto profil Rizky Pratama">
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Saya Bagas Kurniawan, siswa SMK yang tertarik dengan
+                        pembuatan website. Awalnya cuma penasaran gimana
+                        tampilan web dibuat, lama-lama jadi pengen bikin sendiri.
+                    </p>
+                    <p>
+                        Ke depannya saya ingin bekerja sebagai web developer
+                        dan terus nambah kemampuan lewat proyek-proyek kecil.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <ul>
+                        <li><strong>Nama:</strong> Bagas Kurniawan</li>
+                        <li><strong>Sekolah:</strong> SMK Bakti Idhata</li>
+                        <li><strong>Jurusan:</strong> Rekayasa Perangkat Lunak</li>
+                        <li><strong>Minat:</strong> Web Development</li>
+                        <li><strong>Target:</strong> Junior Web Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="section section-alt" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>HTML</h3>
+                        <span>Menengah</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>CSS</h3>
+                        <span>Menengah</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>JavaScript</h3>
+                        <span>Dasar</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>PHP</h3>
+                        <span>Dasar</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 45%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>MySQL</h3>
+                        <span>Dasar</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 45%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Laravel</h3>
+                        <span>Pemula</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Git</h3>
+                        <span>Pemula</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>GitHub</h3>
+                        <span>Pemula</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section class="section" id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="website">Website</button>
+                <button class="filter-btn" data-filter="aplikasi">Aplikasi</button>
+            </div>
+
+            <div class="projects-container">
+
+                <article class="project-card" data-category="website">
+                    <img src="assets/images/project1.jpg" alt="Tampilan website portfolio">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>Website portfolio pribadi dengan tema gelap, dibuat dari nol tanpa framework.</p>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="website">
+                    <img src="assets/images/project2.jpg" alt="Tampilan website profil sekolah">
+                    <div class="project-info">
+                        <h3>Website Profil Sekolah</h3>
+                        <p>Website yang menampilkan informasi sekolah, jurusan, dan kegiatan siswa.</p>
+                        <p class="project-tech">HTML, CSS</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="aplikasi">
+                    <img src="assets/images/project3.jpg" alt="Tampilan aplikasi data siswa">
+                    <div class="project-info">
+                        <h3>Aplikasi Data Siswa</h3>
+                        <p>Aplikasi sederhana untuk menambah, mengubah, dan menghapus data siswa.</p>
+                        <p class="project-tech">PHP, MySQL</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- experience -->
+        <section class="section section-alt" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2024 - sekarang</span>
+                    <h3>Siswa SMK Jurusan PPLG</h3>
+                    <p>Belajar dasar pemrograman, basis data, dan pembuatan website.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2025</span>
+                    <h3>Anggota Ekskul Komputer</h3>
+                    <p>Ikut kegiatan ekskul dan bantu teman-teman yang baru belajar membuat website.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2025</span>
+                    <h3>Proyek Website Sekolah</h3>
+                    <p>Membuat halaman profil sekolah sebagai tugas proyek di kelas.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- certificates -->
+        <section class="section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-container">
+
+                <div class="certificate-card">
+                    <img src="assets/images/certification.png" alt="Sertifikat pelatihan web dasar">
+                    <h3>Pelatihan Web Dasar</h3>
+                    <p>Nama Penyelenggara, 2025</p>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/certificate2.jpg" alt="Sertifikat kursus online">
+                    <h3>Kursus JavaScript Dasar</h3>
+                    <p>Nama Platform, 2025</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="section section-alt" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container">
+                <p>Kalau mau ngobrol soal proyek atau sekadar tanya-tanya, kabarin aja lewat kontak di bawah.</p>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> bagaskurniawan659@gmail.com</li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/bagaskurniawan220" target="_blank">bagaskurniawan220</a></li>
+                </ul>
+                <a href="mailto:rizky.pratama@email.com" class="btn btn-primary">Kirim Email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Bagas Kurniawan. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/bagaskurniawan220" target="_blank">GitHub</a>
+            
+            <a href="mailto:bagaskurniawan659@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top">Top</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

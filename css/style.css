@@ -1,0 +1,291 @@
+/* ===== warna & pengaturan dasar ===== */
+:root {
+    --bg: #0B0F19;
+    --bg-card: #151C2C;
+    --primary: #2563EB;
+    --accent: #38BDF8;
+    --text: #E5E7EB;
+    --text-soft: #9CA3AF;
+    --border: #243049;
+}
+
+/* warna untuk light mode (kelasnya dipasang lewat JavaScript nanti) */
+body.light-mode {
+    --bg: #F3F4F6;
+    --bg-card: #FFFFFF;
+    --text: #111827;
+    --text-soft: #4B5563;
+    --border: #D1D5DB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    background-color: var(--bg-card);
+}
+
+/* ===== tombol ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #0B0F19;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--text);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
+
+/* ===== navbar ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 26px;
+}
+
+.nav-menu a {
+    color: var(--text-soft);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.theme-toggle,
+.hamburger {
+    padding: 6px 14px;
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover,
+.hamburger:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* hamburger disembunyikan di layar besar */
+.hamburger {
+    display: none;
+}
+
+/* ===== hero ===== */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+}
+
+.hero-greeting {
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 6px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: var(--text-soft);
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.hero-description {
+    color: var(--text-soft);
+    max-width: 480px;
+    margin-bottom: 26px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+}
+
+/* ===== section umum ===== */
+.section {
+    padding: 80px 8%;
+    scroll-margin-top: 60px;
+}
+
+.section-alt {
+    background-color: var(--bg-card);
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 10px auto 0;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+/* ===== about ===== */
+.about-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;
+}
+
+.about-text p {
+    color: var(--text-soft);
+    margin-bottom: 14px;
+}
+
+.about-info {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.about-info li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-soft);
+}
+
+.about-info li:last-child {
+    border-bottom: none;
+}
+
+.about-info strong {
+    color: var(--text);
+}
+
+/* ===== skills ===== */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skill-header span {
+    font-size: 13px;
+    color: var(--accent);
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: var(--border);
+}
